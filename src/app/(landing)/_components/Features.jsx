@@ -10,7 +10,7 @@ import { Reveal } from "@/components/ui/Reveal";
 
 export const Features = () => {
   return (
-    <section className="w-full py-20">
+    <section id="features" className="w-full py-20 scroll-mt-20">
       <div className="w-full max-w-7xl mx-auto px-6 md:px-10 lg:px-20">
         {/* Section Header */}
         <div className="flex flex-col items-center text-center mb-20">
@@ -54,11 +54,11 @@ export const Features = () => {
           <Reveal
             animation="fade-up"
             delay={400}
-            className="flex-1 flex justify-center md:justify-end items-center relative"
+            className="flex-1 flex justify-center md:justify-end items-center relative pl-11 pr-1 md:px-0"
           >
             <Image
               src="/mobile1.png"
-              alt="Digitize Your Closet - App Screen" 
+              alt="Digitize Your Closet - App Screen"
               width={380}
               height={772}
               className="object-contain relative z-10"
@@ -72,7 +72,7 @@ export const Features = () => {
           <Reveal
             animation="fade-up"
             delay={400}
-            className="flex-1 flex justify-center md:justify-start items-center relative"
+            className="flex-1 flex justify-center md:justify-start items-center relative pl-11 pr-1 md:px-0"
           >
             <Image
               src="/mobile2.png"
@@ -124,7 +124,7 @@ export const Features = () => {
           <Reveal
             animation="fade-up"
             delay={400}
-            className="flex-1 flex justify-center md:justify-end items-center relative"
+            className="flex-1 flex justify-center md:justify-end items-center relative pl-11 pr-1 md:px-0"
           >
             <Image
               src="/mobile3.png"
@@ -141,7 +141,7 @@ export const Features = () => {
           <Reveal
             animation="fade-up"
             delay={400}
-            className="flex-1 flex justify-center md:justify-start items-center relative"
+            className="flex-1 flex justify-center md:justify-start items-center relative pl-11 pr-1 md:px-0"
           >
             <Image
               src="/mobile4.png"

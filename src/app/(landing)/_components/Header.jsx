@@ -21,9 +21,29 @@ export const Header = () => {
   }, [isOpen]);
 
   const navLinks = [
-    { name: "Features", href: "/features" },
-    { name: "FAQs", href: "/faqs" },
+    { name: "Features", href: "#features" },
+    { name: "FAQs", href: "#faq" },
   ];
+
+  const handleScroll = (e, href) => {
+    if (href.startsWith("#")) {
+      e.preventDefault();
+      const targetId = href.replace("#", "");
+      const elem = document.getElementById(targetId);
+
+      if (window.lenis) {
+        window.lenis.scrollTo(elem, {
+          offset: -80, // Account for fixed header
+          duration: 1.5,
+        });
+      } else {
+        elem?.scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+      setIsOpen(false);
+    }
+  };
 
   return (
     <>
@@ -31,7 +51,7 @@ export const Header = () => {
         <div className="w-full max-w-7xl px-6 md:px-10 lg:px-20 h-full">
           <div className="w-full h-full flex items-center justify-between relative">
             {/* Logo Section */}
-            <Link 
+            <Link
               href="/"
               className="flex items-center gap-[4px] relative group h-[40px] z-[60]"
               onClick={() => setIsOpen(false)}
@@ -46,6 +66,7 @@ export const Header = () => {
                   <Link
                     key={link.name}
                     href={link.href}
+                    onClick={(e) => handleScroll(e, link.href)}
                     className="font-normal text-[16px] text-[#8C7B73] hover:text-[#0F172A] transition-colors"
                   >
                     {link.name}
@@ -95,7 +116,7 @@ export const Header = () => {
                 key={link.name}
                 href={link.href}
                 className="text-[20px] font-medium text-[#0F172A] border-b border-[#E5DDD5] pb-4"
-                onClick={() => setIsOpen(false)}
+                onClick={(e) => handleScroll(e, link.href)}
               >
                 {link.name}
               </Link>

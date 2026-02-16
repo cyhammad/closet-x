@@ -62,11 +62,13 @@ export const metadata = {
   description: "",
 };
 
+import { SmoothScroll } from "@/components/ui/SmoothScroll";
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${satoshi.variable} ${satoshi.className} antialiased`}>
-        {children}
+        <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
   );

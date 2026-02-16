@@ -63,7 +63,7 @@ export const Hero = () => {
           <Reveal
             animation="scale-up"
             delay={400}
-            className="w-full flex justify-center md:justify-end"
+            className="w-full flex justify-center md:justify-end pl-11 pr-1 md:px-0"
           >
             <Image
               src="/hero-mobile.png"
