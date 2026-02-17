@@ -1,7 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { AppleLogo, GooglePlayLogo } from "@/components/icons/icons";
 import { Reveal } from "@/components/ui/Reveal";
 
 export const Hero = () => {
@@ -21,40 +19,6 @@ export const Hero = () => {
               Digitize your closet, plan outfits with AI, and discover your
               personal style — all in one beautifully designed app.
             </p>
-          </Reveal>
-
-          <Reveal animation="fade-up" delay={400}>
-            <div className="flex flex-wrap gap-4">
-              <Link
-                href="#"
-                className="flex items-center gap-2 bg-white rounded-2xl px-4 py-2"
-              >
-                <AppleLogo className="w-10 h-10 text-[#0F172A]" />
-                <div className="flex flex-col items-start leading-none">
-                  <span className="text-[10px] uppercase font-semibold text-[#64748B] mb-0.5">
-                    Available on the
-                  </span>
-                  <span className="text-[17px] font-bold text-[#0F172A]">
-                    App Store
-                  </span>
-                </div>
-              </Link>
-
-              <Link
-                href="#"
-                className="flex items-center gap-2 bg-white rounded-2xl px-4 py-2"
-              >
-                <GooglePlayLogo className="w-10 h-10 text-[#0F172A]" />
-                <div className="flex flex-col items-start leading-none">
-                  <span className="text-[10px] uppercase font-semibold text-[#64748B] mb-0.5">
-                    Get it on
-                  </span>
-                  <span className="text-[17px] font-bold text-[#0F172A]">
-                    Google Play
-                  </span>
-                </div>
-              </Link>
-            </div>
           </Reveal>
         </div>
 
