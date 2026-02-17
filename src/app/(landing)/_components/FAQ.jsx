@@ -40,7 +40,7 @@ export const FAQ = () => {
   };
 
   return (
-    <section id="faq" className="w-full py-24 bg-white scroll-mt-20">
+    <section id="faq" className="w-full py-24 bg-[#FAF7F5] scroll-mt-20">
       <div className="flex flex-col items-center text-center mb-16 px-4">
         <Reveal animation="fade-up">
           <span className="inline-block bg-[#F5E7CD] text-[#0F172A] text-[13px] font-semibold uppercase tracking-widest px-5 py-2 rounded-full mb-6">
