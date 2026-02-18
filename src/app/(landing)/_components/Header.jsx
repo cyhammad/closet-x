@@ -47,7 +47,7 @@ export const Header = () => {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 flex justify-center bg-[#FAF7F5]/80 backdrop-blur-[6px] h-[80px]">
+      <header className="fixed top-0 left-0 right-0 z-50 flex justify-center bg-[#FAF7F5]/80 backdrop-blur-[6px] h-[80px] border-b border-[#E8E0D9]">
         <div className="w-full max-w-7xl px-6 md:px-10 lg:px-20 h-full">
           <div className="w-full h-full flex items-center justify-between relative">
             {/* Logo Section */}
