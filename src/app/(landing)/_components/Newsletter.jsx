@@ -25,6 +25,7 @@ export const Newsletter = () => {
 
   return (
     <section
+      id="newsletter"
       className="w-full py-20 md:py-32 flex flex-col items-center justify-center text-center px-4"
       style={{
         background:

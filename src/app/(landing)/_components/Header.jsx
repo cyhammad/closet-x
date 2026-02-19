@@ -74,10 +74,11 @@ export const Header = () => {
                 ))}
               </nav>
               <Link
-                href="/download"
+                href="#newsletter"
+                onClick={(e) => handleScroll(e, "#newsletter")}
                 className="px-8 py-3 bg-[#F5E7CD] rounded-full flex items-center justify-center text-[#0F172A] font-medium text-[16px] hover:bg-[#F3E6D5] transition-all active:scale-95"
               >
-                Get App
+                Join Now
               </Link>
             </div>
 
@@ -124,11 +125,14 @@ export const Header = () => {
           </nav>
 
           <Link
-            href="/download"
+            href="#newsletter"
             className="mt-4 w-full h-14 bg-[#F5E7CD] rounded-2xl flex items-center justify-center text-[#0F172A] font-semibold text-[18px] hover:bg-[#F3E6D5] transition-all active:scale-[0.98]"
-            onClick={() => setIsOpen(false)}
+            onClick={(e) => {
+              handleScroll(e, "#newsletter");
+              setIsOpen(false);
+            }}
           >
-            Get App
+            Join Now
           </Link>
         </div>
       </div>
